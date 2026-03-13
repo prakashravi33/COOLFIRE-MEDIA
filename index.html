@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coolfire Media</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <meta name="description"
     content="Coolfire Media Agency — a digital powerhouse creating content that connects & inspires." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="./styles.css" />
@@ -41,8 +42,24 @@
 
       <div class="navactions">
         <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
-          <span class="icon-btn__dot" aria-hidden="true"></span>
-          <span class="icon-btn__label">Theme</span>
+          <!-- Sun icon — shown in dark mode -->
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <!-- Moon icon — shown in light mode -->
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
         </button>
         <button class="burger" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false"
           aria-controls="mobileMenu">
@@ -156,8 +173,9 @@
           <h2 class="about__title">Who We Are</h2>
           <div class="about__text">
             <p>
-              At <strong class="c-cyan">Coolfire Media</strong>, we blend the elemental forces of creativity
-              <strong class="c-orange">Fire</strong> and strategy <strong class="c-cyan">Cool</strong>.
+              At <strong>Coolfire Media</strong>, we blend the elemental forces of creativity
+              <strong style="color: orange;">Fire</strong> and strategy <strong
+                style="color: rgb(1, 239, 239);">Cool</strong>.
               We are a team of passionate storytellers, creators, and digital strategists dedicated to
               building communities and sparking meaningful conversations through video content.
             </p>
@@ -194,8 +212,9 @@
             <span>Aanmeega Superstar</span>
           </div>
           <div class="logochip">
-            <img src="images/Humansofisha_img.jpg" alt="Humans of Isha" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Humans of Isha</span>
+            <img src="images/PhysioMom_Mayuri_img.jpg" alt="PhysioMom Mayuri" referrerpolicy="no-referrer"
+              loading="lazy" />
+            <span>PhysioMom Mayuri</span>
           </div>
           <div class="logochip">
             <img src="images/savesoil_img.jpg" alt="Save Soil" referrerpolicy="no-referrer" loading="lazy" />
@@ -207,52 +226,65 @@
             <span>Cauvery Calling</span>
           </div>
           <div class="logochip">
-            <img src="images/sadhgurutamil_img.jpg" alt="Sadhguru Tamil" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Sadhguru Tamil</span>
+            <img src="images/theblissedoutphysio_img.jpg" alt="TheBlissedOutPhysio" referrerpolicy="no-referrer"
+              loading="lazy" />
+            <span>TheBlissedOutPhysio</span>
           </div>
           <div class="logochip">
-            <img src="images/humansofishaenglish_img.jpg" alt="Humans of Isha English" referrerpolicy="no-referrer"
-              loading="lazy" />
-            <span>Humans of Isha English</span>
+            <img src="images/anand_insights_img.jpg" alt="Anand Insight" referrerpolicy="no-referrer" loading="lazy" />
+            <span>Anand Insight</span>
+          </div>
+          <div class="logochip">
+            <img src="images/gargi_uvacha_img.jpg" alt="Gargi Uvacha" referrerpolicy="no-referrer" loading="lazy" />
+            <span>Gargi Uvacha</span>
           </div>
         </div>
         <!-- duplicate group for seamless loop -->
-        <div class="carousel__group" aria-hidden="true">
+        <div class="carousel__group">
           <div class="logochip">
-            <img src="images/coolfire_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/coolfire_img.jpg" alt="Coolfire Media" referrerpolicy="no-referrer" loading="lazy" />
             <span>Coolfire Media</span>
           </div>
           <div class="logochip">
-            <img src="images/rajfiles_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/rajfiles_img.jpg" alt="Rajfiles" referrerpolicy="no-referrer" loading="lazy" />
             <span>Rajfiles</span>
           </div>
           <div class="logochip">
-            <img src="images/Einstein&Agathiyar_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Einstein & Agathiyar</span>
+            <img src="images/Einstein&Agathiyar_img.jpg" alt="Einstein and Agathiyar" referrerpolicy="no-referrer"
+              loading="lazy" />
+            <span>Einstein and Agathiyar</span>
           </div>
           <div class="logochip">
-            <img src="images/AanmeegaSuperstar_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/AanmeegaSuperstar_img.jpg" alt="Aanmeega Superstar" referrerpolicy="no-referrer"
+              loading="lazy" />
             <span>Aanmeega Superstar</span>
           </div>
           <div class="logochip">
-            <img src="images/Humansofisha_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Humans of Isha</span>
+            <img src="images/PhysioMom_Mayuri_img.jpg" alt="PhysioMom Mayuri" referrerpolicy="no-referrer"
+              loading="lazy" />
+            <span>PhysioMom Mayuri</span>
           </div>
           <div class="logochip">
-            <img src="images/savesoil_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/savesoil_img.jpg" alt="Save Soil" referrerpolicy="no-referrer" loading="lazy" />
             <span>Save Soil</span>
           </div>
           <div class="logochip">
-            <img src="images/cauverycalling_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/cauverycalling_img.jpg" alt="Cauvery Calling" referrerpolicy="no-referrer"
+              loading="lazy" />
             <span>Cauvery Calling</span>
           </div>
           <div class="logochip">
-            <img src="images/sadhgurutamil_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Sadhguru Tamil</span>
+            <img src="images/theblissedoutphysio_img.jpg" alt="TheBlissedOutPhysio" referrerpolicy="no-referrer"
+              loading="lazy" />
+            <span>TheBlissedOutPhysio</span>
           </div>
           <div class="logochip">
-            <img src="images/humansofishaenglish_img.jpg" alt="" referrerpolicy="no-referrer" loading="lazy" />
-            <span>Humans of Isha English</span>
+            <img src="images/anand_insights_img.jpg" alt="Anand Insight" referrerpolicy="no-referrer" loading="lazy" />
+            <span>Anand Insight</span>
+          </div>
+          <div class="logochip">
+            <img src="images/gargi_uvacha_img.jpg" alt="Gargi Uvacha" referrerpolicy="no-referrer" loading="lazy" />
+            <span>Gargi Uvacha</span>
           </div>
         </div>
       </div>
@@ -279,7 +311,7 @@
           </div>
           <div class="channel-card__body">
             <h3>Coolfire Media</h3>
-            <p>Main Hub</p>
+            <p>Bold Voice of People</p>
           </div>
           <div class="channel-card__links" aria-label="Coolfire Media social links">
             <a href="https://youtube.com/@coolfiretamil?si=MFJ1YAweJrkbdqXO" target="_blank" rel="noopener noreferrer"
@@ -316,7 +348,7 @@
           </div>
           <div class="channel-card__body">
             <h3>Rajfiles</h3>
-            <p>Documentary &amp; Stories</p>
+            <p>History and Geo Politics</p>
           </div>
           <div class="channel-card__links" aria-label="Rajfiles social links">
             <a href="https://youtube.com/@rajfilestamil?si=JIda5QASroCxXPgV" target="_blank" rel="noopener noreferrer"
@@ -444,24 +476,25 @@
         </article>
 
         <!-- Card 5 -->
-        <article class="channel-card" style="--glow: rgba(34, 197, 94, 0.3)">
+        <article class="channel-card" style="--glow: rgba(59, 130, 246, 0.3)">
           <div class="channel-card__logo">
-            <img src="images/Humansofisha_img.jpg" alt="Humans of Isha" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/cauverycalling_img.jpg" alt="Cauvery Calling" referrerpolicy="no-referrer"
+              loading="lazy" />
           </div>
           <div class="channel-card__body">
-            <h3>Humans of Isha</h3>
-            <p>Personal Journeys</p>
+            <h3>Cauvery Calling</h3>
+            <p>Environmental Initiative</p>
           </div>
-          <div class="channel-card__links" aria-label="Humans of Isha social links">
-            <a href="https://youtube.com/@humansofisha_tamil?si=glf4iwsWffjqceGdsi=reZLMtzzFDnqTL0Osi=HKWAzfOeGqZElbhK"
-              target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <div class="channel-card__links" aria-label="Cauvery Calling social links">
+            <a href="https://youtube.com/@cauverycallingtamil?si=Num5F-rskmuukhkV" target="_blank"
+              rel="noopener noreferrer" aria-label="YouTube">
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/humansofisha_cf" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/cauverycalling_tamil" target="_blank" rel="noopener noreferrer"
               aria-label="Instagram">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -469,18 +502,11 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://facebook.com/share/15TaEzrMj6" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/CauveryCalling.TamilOfficial" target="_blank" rel="noopener noreferrer"
               aria-label="Facebook">
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M13.5 22v-8h2.7l.4-3H13.5V9.3c0-.9.3-1.5 1.6-1.5h1.6V5.1A22 22 0 0 0 14.3 5c-2.4 0-4 1.5-4 4.2V11H7.7v3h2.6v8h3.2Z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-            <a href="https://x.com/humansofisha" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-              <svg viewBox="0 0 24 24" class="i">
-                <path
-                  d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.1-6.6L5.5 22H2l7.3-8.3L1 2h6.7l4.7 6.1L18.9 2Zm-1.2 18h1.7L6.8 3.9H5L17.7 20Z"
                   fill="currentColor" />
               </svg>
             </a>
@@ -525,25 +551,25 @@
         </article>
 
         <!-- Card 7 -->
-        <article class="channel-card" style="--glow: rgba(59, 130, 246, 0.3)">
+        <article class="channel-card" style="--glow: rgba(34, 197, 94, 0.3)">
           <div class="channel-card__logo">
-            <img src="images/cauverycalling_img.jpg" alt="Cauvery Calling" referrerpolicy="no-referrer"
+            <img src="images/PhysioMom_Mayuri_img.jpg" alt="Humans of Isha" referrerpolicy="no-referrer"
               loading="lazy" />
           </div>
           <div class="channel-card__body">
-            <h3>Cauvery Calling</h3>
-            <p>Environmental Initiative</p>
+            <h3>PhysioMom Mayuri</h3>
+            <p>Personal Journeys</p>
           </div>
-          <div class="channel-card__links" aria-label="Cauvery Calling social links">
-            <a href="https://youtube.com/@cauverycallingtamil?si=Num5F-rskmuukhkV" target="_blank"
-              rel="noopener noreferrer" aria-label="YouTube">
+          <div class="channel-card__links" aria-label="Humans of Isha social links">
+            <a href="https://www.youtube.com/@kidsphysiomom" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube">
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/cauverycalling_tamil" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/kidsphysiomom/" target="_blank" rel="noopener noreferrer"
               aria-label="Instagram">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -551,11 +577,18 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://www.facebook.com/CauveryCalling.TamilOfficial" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/kidsphysiomom/" target="_blank" rel="noopener noreferrer"
               aria-label="Facebook">
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M13.5 22v-8h2.7l.4-3H13.5V9.3c0-.9.3-1.5 1.6-1.5h1.6V5.1A22 22 0 0 0 14.3 5c-2.4 0-4 1.5-4 4.2V11H7.7v3h2.6v8h3.2Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://x.com/physiomayuri03" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.1-6.6L5.5 22H2l7.3-8.3L1 2h6.7l4.7 6.1L18.9 2Zm-1.2 18h1.7L6.8 3.9H5L17.7 20Z"
                   fill="currentColor" />
               </svg>
             </a>
@@ -565,14 +598,14 @@
         <!-- Card 8 -->
         <article class="channel-card" style="--glow: rgba(20, 184, 166, 0.3)">
           <div class="channel-card__logo">
-            <img src="images/sadhgurutamil_img.jpg" alt="Sadhguru Tamil" referrerpolicy="no-referrer" loading="lazy" />
+            <img src="images/gargi_uvacha_img.jpg" alt="Gargi Uvacha" referrerpolicy="no-referrer" loading="lazy" />
           </div>
           <div class="channel-card__body">
-            <h3>Sadhguru Tamil</h3>
-            <p>Wisdom &amp; Spirituality</p>
+            <h3>Gargi Uvacha</h3>
+            <p>Motherhood through Dharmic Lens</p>
           </div>
-          <div class="channel-card__links" aria-label="Sadhguru Tamil social links">
-            <a href="https://youtube.com/@sadhgurutamil?si=0xP6wDKVUjztk77W" target="_blank" rel="noopener noreferrer"
+          <div class="channel-card__links" aria-label="Gargi Uvacha">
+            <a href="https://www.youtube.com/@gargiuvacha_decolonization" target="_blank" rel="noopener noreferrer"
               aria-label="YouTube">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -580,7 +613,7 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/einsteinandagathiyar" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/gargiuvacha/" target="_blank" rel="noopener noreferrer"
               aria-label="Instagram">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -588,7 +621,7 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://facebook.com/SadhguruTamil" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/gargiuvacha/" target="_blank" rel="noopener noreferrer"
               aria-label="Facebook">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -596,7 +629,7 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://x.com/SadhguruTamil" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+            <a href="https://x.com/gargiuvacha" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.1-6.6L5.5 22H2l7.3-8.3L1 2h6.7l4.7 6.1L18.9 2Zm-1.2 18h1.7L6.8 3.9H5L17.7 20Z"
@@ -609,15 +642,14 @@
         <!-- Card 9 -->
         <article class="channel-card" style="--glow: rgba(16, 185, 129, 0.3)">
           <div class="channel-card__logo">
-            <img src="images/humansofishaenglish_img.jpg" alt="Humans of Isha English" referrerpolicy="no-referrer"
-              loading="lazy" />
+            <img src="images/anand_insights_img.jpg" alt="Anand Insight" referrerpolicy="no-referrer" loading="lazy" />
           </div>
           <div class="channel-card__body">
-            <h3>Humans of Isha English</h3>
-            <p>Global Stories</p>
+            <h3>Anand Insight</h3>
+            <p>Dharma and Politics</p>
           </div>
-          <div class="channel-card__links" aria-label="Humans of Isha English social links">
-            <a href="https://youtube.com/@humansofisha?si=HKWAzfOeGqZElbhK" target="_blank" rel="noopener noreferrer"
+          <div class="channel-card__links" aria-label="Anand Insight">
+            <a href="https://www.youtube.com/@anandinsight" target="_blank" rel="noopener noreferrer"
               aria-label="YouTube">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -625,7 +657,7 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/humansofisha_cf" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/anandinsight/" target="_blank" rel="noopener noreferrer"
               aria-label="Instagram">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -633,7 +665,7 @@
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="https://facebook.com/share/15TaEzrMj6" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/anandinsights/" target="_blank" rel="noopener noreferrer"
               aria-label="Facebook">
               <svg viewBox="0 0 24 24" class="i">
                 <path
@@ -650,15 +682,56 @@
             </a>
           </div>
         </article>
+
+        <!-- Card 10 -->
+        <article class="channel-card" style="--glow: rgba(16, 185, 129, 0.3)">
+          <div class="channel-card__logo">
+            <img src="images/theblissedoutphysio_img.jpg" alt="The Blissed Out Physio" referrerpolicy="no-referrer"
+              loading="lazy" />
+          </div>
+          <div class="channel-card__body">
+            <h3>TheBlissedOutPhysio</h3>
+            <p>Decoding Physiotherapy</p>
+          </div>
+          <div class="channel-card__links" aria-label="The Blissed Out Physio">
+            <a href="https://www.youtube.com/@theblissedoutphysio" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/_theblissedoutphysio_" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1.2 1.2 0 1 1-1.2-1.2A1.2 1.2 0 0 1 18 6.8Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/anandinsights/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3H13.5V9.3c0-.9.3-1.5 1.6-1.5h1.6V5.1A22 22 0 0 0 14.3 5c-2.4 0-4 1.5-4 4.2V11H7.7v3h2.6v8h3.2Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://x.com/DrAditiPT" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.1-6.6L5.5 22H2l7.3-8.3L1 2h6.7l4.7 6.1L18.9 2Zm-1.2 18h1.7L6.8 3.9H5L17.7 20Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+
       </div>
     </section>
-
-
   </main>
-
-
-
-
 
   <!-- Contact / Connect Section -->
   <section id="contact" class="contact-section">
@@ -672,7 +745,8 @@
         <!-- Left side (Address / Brand info) -->
         <div class="contact-card glass slide-up" data-observe>
           <a class="brand brand--footer" href="#top">
-            <img class="brand__logo" src="images/logo.png" alt="Coolfire logo" referrerpolicy="no-referrer" loading="lazy" />
+            <img class="brand__logo" src="images/logo.png" alt="Coolfire logo" referrerpolicy="no-referrer"
+              loading="lazy" />
             <span class="brand__name">COOLFIRE</span>
           </a>
           <p class="contact-card__desc">
@@ -687,7 +761,7 @@
                 W Ramalingam Rd, R.S. Puram,<br />
                 Coimbatore, Tamil Nadu 641002
               </li>
-              <li class="contact__phone">09003490371</li>
+              <li class="contact__phone">+91 88072 75003</li>
             </ul>
           </div>
         </div>
@@ -695,21 +769,36 @@
         <!-- Right side (Connect & Socials) -->
         <div class="contact-card glass slide-up" data-observe style="--delay: 200ms;">
           <h3 class="contact-card__subtitle">Reach out directly</h3>
-          <a href="mailto:hello@coolfiremedia.com" class="contact__email">hello@coolfiremedia.com</a>
-          
+          <a href="mailto:hello@coolfiremedia.com" class="contact__email">contact@coolfire.in</a>
+
           <h3 class="contact-card__subtitle" style="margin-top: 40px;">Follow us</h3>
           <div class="box-socials">
-            <a href="https://youtube.com/@coolfiretamil?si=MFJ1YAweJrkbdqXO" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
+            <a href="https://youtube.com/@coolfiretamil?si=MFJ1YAweJrkbdqXO" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube" class="social-icon">
               <!-- youtube icon -->
-              <svg viewBox="0 0 24 24" class="i"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"
+                  fill="currentColor" />
+              </svg>
             </a>
-            <a href="https://www.instagram.com/coolfiretamil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+            <a href="https://www.instagram.com/coolfiretamil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+              target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
               <!-- instagram icon -->
-              <svg viewBox="0 0 24 24" class="i"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1.2 1.2 0 1 1-1.2-1.2A1.2 1.2 0 0 1 18 6.8Z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1.2 1.2 0 1 1-1.2-1.2A1.2 1.2 0 0 1 18 6.8Z"
+                  fill="currentColor" />
+              </svg>
             </a>
-            <a href="https://facebook.com/share/ZRfcMqoa3HKrnh8S/?mibextid=kFxxJD" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+            <a href="https://facebook.com/share/ZRfcMqoa3HKrnh8S/?mibextid=kFxxJD" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
               <!-- facebook icon -->
-              <svg viewBox="0 0 24 24" class="i"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.3c0-.9.3-1.5 1.6-1.5h1.6V5.1A22 22 0 0 0 14.3 5c-2.4 0-4 1.5-4 4.2V11H7.7v3h2.6v8h3.2Z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3H13.5V9.3c0-.9.3-1.5 1.6-1.5h1.6V5.1A22 22 0 0 0 14.3 5c-2.4 0-4 1.5-4 4.2V11H7.7v3h2.6v8h3.2Z"
+                  fill="currentColor" />
+              </svg>
             </a>
           </div>
         </div>
