@@ -1579,3 +1579,24 @@ html.dark .site-footer {
     font-size: 15px;
   }
 }
+
+
+/* hide both first */
+.mobile-email,
+.desktop-email {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .mobile-email {
+    display: inline-block;
+  }
+}
+
+/* laptop / desktop */
+@media (min-width: 769px) {
+  .desktop-email {
+    display: inline-block;
+  }
+}
